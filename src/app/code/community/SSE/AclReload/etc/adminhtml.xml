@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <menu>
+        <system>
+            <children>
+                <acl>
+                    <children>
+                        <reload translate="title">
+                            <title>Reload ACL</title>
+                            <sort_order>100</sort_order>
+                            <action>adminhtml/permissions_aclReload/index</action>
+                        </reload>
+                    </children>
+                </acl>
+            </children>
+        </system>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <acl>
+                                <children>
+                                    <reload translate="title" module="SSE_ReloadAcl">
+                                        <title>Reload ACL</title>
+                                        <sort_order>100</sort_order>
+                                    </reload>
+                                </children>
+                            </acl>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * This file is part of SSE_AclReload for Magento.
+ *
+ * @license http://opensource.org/licenses/OSL-3.0 Open Software License (OSL 3.0)
+ * @author Fabian Schmengler <fabian@schmengler-se.de>
+ * @category SSE
+ * @package SSE_AclReload
+ * @copyright Copyright (c) 2014 Schmengler Software Engineering (http://www.schmengler-se.de/)
+ */
+-->
+<config>
+    <modules>
+        <SSE_AclReload>
+            <version>0.1.0</version>
+        </SSE_AclReload>
+    </modules>
+    <global>
+        <blocks>
+            <sse_aclreload>
+                <class>SSE_AclReload_Block</class>
+            </sse_aclreload>
+        </blocks>
+        <helpers>
+            <sse_aclreload>
+                <class>SSE_AclReload_Helper</class>
+            </sse_aclreload>
+        </helpers>
+    </global>
+    <adminhtml>
+        <translate>
+            <modules>
+                <SSE_AclReload>
+                    <files>
+                        <default>SSE_AclReload.csv</default>
+                    </files>
+                </SSE_AclReload>
+            </modules>
+        </translate>
+        <layout>
+            <updates>
+                <sse_aclreload>
+                    <file>sse_aclreload.xml</file>
+                </sse_aclreload>
+            </updates>
+        </layout>
+    </adminhtml>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <SSE_AclReload before="Mage_Adminhtml">SSE_AclReload_Adminhtml</SSE_AclReload>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+</config>

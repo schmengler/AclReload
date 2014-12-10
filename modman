@@ -1,0 +1,4 @@
+src/app/code/community/SSE/AclReload app/code/community/SSE/AclReload
+src/app/design/adminhtml/default/default/layout/sse_aclreload.xml app/design/adminhtml/default/default/layout/sse_aclreload.xml
+src/app/design/adminhtml/default/default/template/sse_aclreload app/design/adminhtml/default/default/template/sse_aclreload
+src/app/etc/modules/SSE_AclReload.xml app/etc/modules/SSE_AclReload.xml
