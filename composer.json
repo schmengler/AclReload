@@ -2,7 +2,7 @@
     "name": "sse/aclreload",
     "license": "osl-3.0",
     "type": "magento-module",
-    "description": "Adds a menu entry "Reload ACL" to Magento admin panel. Useful after installing extensions instead of logging out and back in.",
+    "description": "Adds a menu entry \"Reload ACL\" to Magento admin panel. Useful after installing extensions instead of logging out and back in.",
     "homepage": "https://github.com/schmengler/AclReload",
     "require": {
         "magento-hackathon/magento-composer-installer": "*"
