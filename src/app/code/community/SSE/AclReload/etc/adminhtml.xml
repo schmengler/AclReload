@@ -5,7 +5,7 @@
             <children>
                 <acl>
                     <children>
-                        <reload translate="title">
+                        <reload translate="title" module="sse_aclreload">
                             <title>Reload ACL</title>
                             <sort_order>100</sort_order>
                             <action>adminhtml/permissions_aclReload/index</action>
@@ -23,7 +23,7 @@
                         <children>
                             <acl>
                                 <children>
-                                    <reload translate="title" module="SSE_ReloadAcl">
+                                    <reload translate="title" module="sse_aclreload">
                                         <title>Reload ACL</title>
                                         <sort_order>100</sort_order>
                                     </reload>
