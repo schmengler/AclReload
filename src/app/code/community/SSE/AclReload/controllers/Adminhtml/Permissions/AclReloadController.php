@@ -11,6 +11,11 @@
 
 class SSE_AclReload_Adminhtml_Permissions_AclReloadController extends Mage_Adminhtml_Controller_Action
 {
+    protected function _isAllowed()
+    {
+        return true;
+    }
+
     public function indexAction()
     {
         $session = Mage::getSingleton('admin/session');
